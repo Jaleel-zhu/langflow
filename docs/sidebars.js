@@ -39,6 +39,7 @@ module.exports = {
         "Concepts/concepts-flows",
         "Concepts/concepts-objects",
         "Concepts/concepts-publish",
+        "Concepts/mcp-server",
         "Concepts/concepts-file-management",
         "Concepts/concepts-voice-mode",
       ],
@@ -54,7 +55,6 @@ module.exports = {
         "Components/components-embedding-models",
         "Components/components-helpers",
         "Components/components-io",
-        "Components/components-loaders",
         "Components/components-logic",
         "Components/components-memories",
         "Components/components-models",
@@ -174,14 +174,6 @@ module.exports = {
       type: "category",
       label: "Integrations",
       items: [
-        {
-          type: 'category',
-          label: 'MCP (Model Context Protocol)',
-          items: [
-            'Integrations/MCP/integrations-mcp',
-            'Integrations/MCP/mcp-component-astra',
-          ],
-        },
         "Integrations/Apify/integrations-apify",
         {
           type: "doc",
@@ -195,11 +187,17 @@ module.exports = {
           label: "Composio",
         },
         {
+          type: "doc",
+          id: "Integrations/mcp-component-astra",
+          label: "Astra DB MCP server",
+        },
+        {
           type: 'category',
           label: 'Google',
           items: [
             'Integrations/Google/integrations-setup-google-oauth-langflow',
             'Integrations/Google/integrations-setup-google-cloud-vertex-ai-langflow',
+            'Integrations/Google/integrations-google-big-query',
           ],
         },
         "Integrations/integrations-langfuse",
