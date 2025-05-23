@@ -251,10 +251,18 @@ const config = {
             from: "/components/custom",
           },
           {
+            to: "/components-bundle-components",
+            from: "/components-loaders",
+          },
+          {
+            to: "/mcp-server",
+            from: "/integrations-mcp",
+          },
+          {
             to: "/deployment-kubernetes-dev",
             from: [
               "/deployment-kubernetes",
-            ]
+            ],
           },
           // add more redirects like this
           // {
@@ -350,7 +358,7 @@ const config = {
               {
                 html: `<div class="footer-links">
                   <span>© ${new Date().getFullYear()} Langflow</span>
-                  <span id="preferenceCenterContainer"> ·&nbsp; <a href="/cookies">Manage Privacy Choices</a></span>
+                  <span id="preferenceCenterContainer"> ·&nbsp; <a href="https://langflow.org/preferences">Manage Privacy Choices</a></span>
                   </div>`,
               },
             ],
